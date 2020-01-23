@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Поиск бизнеса</title>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="#">
+                <img src='img/logo_img.png'/>
+            </a>
+            <h4>Сайт по продаже и покупке бизнеса в России</h4>
+        </div>
+        <div class="auth">
+            <ul>
+                <li>
+                    <a href="#">Вход</a>
+                </li>
+                <li class="separator">
+                </li>
+                <li>
+                    <a href="#">Регистрация</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="flags">
+                <li>
+                    <a href="#"><img src="img/flag_russia.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/flag_USA.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/flag_germany.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <ul id="menu-base">
+            <li class="first">
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <div class="left-separator"></div>
+                <a href="#">Продать бизнес</a>
+            </li>
+            <li class="active">
+                <div class="left-separator"></div>
+                <a href="#">Купить бизнес</a>
+            </li>
+            <li>
+                <div class="left-separator"></div>
+                <a href="#">Оценить бизнес</a>
+            </li>
+            <li>
+                <div class="left-separator"></div>
+                <a href="#">Найти инвестора</a>
+            </li>
+            <li>
+                <div class="left-separator"></div>
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="block-filter">
+            <h3>Поиск бизнеса</h3>
+            <div class="filter">
+                <h4>Категории бизнеса</h4>
+                <select multiple="multiple" class="category" name="product_types" size="15">
+                <option>Показать все категории</option>
+                <option>Интернет-магазины</option>
+                <option>Салоны красоты</option>
+                <option>Торговая компания</option>
+                <option>Рестораны и кафе</option>
+                <option>Тур. агенства</option>
+                <option>Продукты питания и алкоголь</option>
+                <option>Производственная компания</option>
+                <option>Одежда и обувь</option>
+                </select>
+                <h4>Местоположение</h4>
+                <select>
+                    <option>Федеральный округ</option>
+                    <option>Центральный федеральный округ</option>
+                    <option>Южный федеральный округ</option>
+                    <option>Северо-Западный федеральный округ</option>
+                    <option>Дальневосточный федеральный округ</option>
+                    <option>Сибирский федеральный округ</option>
+                    <option>Уральский федеральный округ</option>
+                    <option>Приволжский федеральный округ</option>
+                    <option>Северо-Кавказский федеральный округ</option>
+                </select>
+                <select>
+                    <option>Область</option>
+                    <option>Амурская область</option>
+                    <option>Архангельская область</option>
+                    <option>Астраханская область</option>
+                    <option>Белгородская область</option>
+                    <option>Брянская область</option>
+                    <option>Челябинская область</option>
+                    <option>Иркутская область</option>
+                    <option>Ивановская область</option>
+                </select>
+                <select>
+                    <option>Город</option>
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Новосибирск</option>
+                    <option>Екатеринбург</option>
+                    <option>Нижний Новгород</option>
+                    <option>Казань</option>
+                    <option>Самара</option>
+                    <option>Челябинск</option>
+                </select>
+                <h4>Стоимость</h4>
+                <div class="prise">
+                    <p>от:
+                    <select>
+                        <option disabled></option>
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                    </select></p>
+                    <p>до:
+                    <select>
+                        <option disabled></option>
+                        <option>1000</option>
+                        <option>10000</option>
+                        <option>50000</option>
+                        <option>100000</option>
+                    </select></p>
+                </div>
+                <h4>Размер бизнеса</h4>
+                <p><input type="checkbox" name="option1" value="a1" checked>Стартапы<br/>
+                    <input type="checkbox" name="option2" value="a2">Микробизнес<br/>
+                    <input type="checkbox" name="option3" value="a3">Малый бизнес<br/>
+                    <input type="checkbox" name="option4" value="a4">Средний бизнес</p>
+                <div class="clear"></div>
+                <div class="search">
+                    <div class="button-blue">
+                        <a href="#">Поиск</a>
+                        <div></div>
+                    </div>
+                    <h4>
+                        <a href="#">Расширенный поиск>></a>
+                    </h4>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="block-list">
+            <h3>По вашему запросу найдено <span>698</span> ресторанов</h3>
+            <div class="block-tab w520">
+                <div class="filter-prise">
+                    <p>Отсортировать:</p>
+                    <select>
+                        <option>Цена по убыванию</option>
+                        <option>Популярность</option>
+                        <option>Размер бизнеса по убыванию</option>
+                    </select>
+                </div>
+                <ul class="menu-left">
+                    <li class="active">
+                        <a href="#">
+                            <img src="img/icon_list.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon_galery.png">
+                        </a>
+                    </li>
+                </ul>
+                <div class="about-business">
+                    <h2>$230 000 <span>Ресторан итальянской кухни</span></h2>
+                    <div class="frame">
+                        <img src="img/photo_business_1.jpg">
+                        <div class="photo-comment">
+                            <h4>6 фото/ 3D тур</h4>
+                        </div>
+                    </div>
+                    <p>Ресторан итальянской кухни с шеф-поваром из Италии, авторским дизайном, антикварной мебелью.
+                    Отличный сервис, уютный интерьер, в меру гламурный, в меру домашний, рояль, живая музыка...</p>
+                    <p><a class="right" href="#">Подробная информация о бизнесе >></a></p>
+                    <div class="button-add">
+                        <a href="#">Добавить в портфель</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="about-business">
+                    <h2>$300 000 <span>Ресторан армянской кухни</span></h2>
+                    <div class="frame">
+                        <img src="img/photo_business_1.jpg">
+                        <div class="photo-comment">
+                            <h4>3 фото</h4>
+                        </div>
+                    </div>
+                    <p>Ресторан итальянской кухни с шеф-поваром из Италии, авторским дизайном, антикварной мебелью.
+                        Отличный сервис, уютный интерьер, в меру гламурный, в меру домашний, рояль, живая музыка...</p>
+                    <p><a class="right" href="#">Подробная информация о бизнесе >></a></p>
+                    <div class="button-add">
+                        <a href="#">Добавить в портфель</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="about-business">
+                    <h2>$150 000 <span>Кафе-закузочная</span></h2>
+                    <div class="frame">
+                        <img src="img/photo_business_3.jpg">
+                        <div class="photo-comment">
+                            <h4>10 фото</h4>
+                        </div>
+                    </div>
+                    <p>Ресторан итальянской кухни с шеф-поваром из Италии, авторским дизайном, антикварной мебелью.
+                        Отличный сервис, уютный интерьер, в меру гламурный, в меру домашний, рояль, живая музыка...</p>
+                    <p><a class="right" href="#">Подробная информация о бизнесе >></a></p>
+                    <div class="button-add">
+                        <a href="#">Добавить в портфель</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="about-business">
+                    <h2>$220 000 <span>Ресторан быстрого питания</span></h2>
+                    <div class="frame">
+                        <img src="img/photo_business_4.jpg">
+                        <div class="photo-comment">
+                            <h4>6 фото/ 3D тур</h4>
+                        </div>
+                    </div>
+                    <p>Ресторан итальянской кухни с шеф-поваром из Италии, авторским дизайном, антикварной мебелью.
+                        Отличный сервис, уютный интерьер, в меру гламурный, в меру домашний, рояль, живая музыка...</p>
+                    <p><a class="right" href="#">Подробная информация о бизнесе >></a></p>
+                    <div class="button-add">
+                        <a href="#">Добавить в портфель</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="about-business last">
+                    <h2>$120 000 <span>Кафе-пекарня</span></h2>
+                    <div class="frame">
+                        <img src="img/photo_business_3.jpg">
+                        <div class="photo-comment">
+                            <h4>4 фото/ 3D тур</h4>
+                        </div>
+                    </div>
+                    <p>Ресторан итальянской кухни с шеф-поваром из Италии, авторским дизайном, антикварной мебелью.
+                        Отличный сервис, уютный интерьер, в меру гламурный, в меру домашний, рояль, живая музыка...</p>
+                    <p><a class="right" href="#">Подробная информация о бизнесе >></a></p>
+                    <div class="button-add">
+                        <a href="#">Добавить в портфель</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul class="pages">
+                <li class="previous-page">
+                    <a href="#"><img src="img/arrow-left.png">
+                        К предыдущей странице</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">1</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">2</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">3</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">4</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">...</a>
+                </li>
+                <li class="numeric">
+                    <a href="#">34</a>
+                </li>
+                <li class="next-page">
+                    <a href="#">К следующей странице
+                    <img src="img/arrow-right.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="text">
+                <h3>ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ</h3>
+                <h3>среди ресторанов</h3>
+            </div>
+            <img src="img/right_banner_img2.jpg">
+            <p>Ресторан японской кухни</p>
+            <h2>$350 000</h2>
+            <div class="vip"></div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="footer">
+        <div class="logo">
+            <a href="#">
+                <img src='img/logo_img.png'/>
+            </a>
+        </div>
+        <div class="clear"></div>
+        <ul id="menu-footer">
+            <li>
+                <a href="#">Для клиентов</a>
+                <ul>
+                    <li>
+                        <a href="#">Служба поддержки</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Инструменты и сервисы</a>-left
+                <ul>
+                    <li>
+                        <a href="#">Версия сайтов для планшетов<br/> и мобильных устроиств</a>
+                    </li>
+                    <li>
+                        <a href="#">Статьи о продаже бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="#">Статьи о покупке бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="#">Статьи о стартапах</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Для клиентов</a>
+                <ul>
+                    <li>
+                        <a href="#">Служба поддержки</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Для клиентов</a>
+                <ul>
+                    <li>
+                        <a href="#">Служба поддержки</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Для клиентов</a>
+                <ul>
+                    <li>
+                        <a href="#">Служба поддержки</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
